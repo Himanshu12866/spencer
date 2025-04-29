@@ -4,7 +4,7 @@ import UsersData from './components/usersdata';
 function App() {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <UsersData />
     </>
   );

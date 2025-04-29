@@ -6,10 +6,11 @@ export const AppContext = createContext();
 const AppContextProvider = (props) => {
   const [userData, setUserData] = useState([]); // user data state
   const [loading, setLoading] = useState(true); // loading state
-  const backend_URL = process.env.REACT_APP_BACKEND_URL;
+  const backendURL = process.env.REACT_APP_BACKEND_URL
   const getUserData = async () => {
+    console.log(backendURL)
     try {
-      const response = await axios.get(`${backend_URL}getusers`);
+      const response = await axios.get(`${backendURL}getusers`);
       setUserData(response.data[0].users); // Assuming 'users' is the correct key
     } catch (error) {
       console.error(error);
