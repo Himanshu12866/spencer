@@ -8,9 +8,9 @@ const UsersData = () => {
   }
   return (
     <div>
-      {/* {userData.map((user, index) => (
+      {userData.map((user, index) => (
         <li key={index}>{user.firstName}</li>
-      ))} */}
+      ))}
     </div>
   );
 };
