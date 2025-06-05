@@ -16,7 +16,7 @@ const AppContextProvider = (props) => {
       console.error(error);
     } finally {
       setLoading(false); // Set loading to false when data is fetched or an error occurs
-      //Just for testing purpose 
+    
     }
   };
   useEffect(() => {
